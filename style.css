@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e6e4e4;
+}
+
+
+/* 1st navbar */
+.navbar1{
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* icon and text Meal Today */
+.nav1div1{
+    display: flex;
+    gap: 5px;
+}
+
+
+/* 2nd navbar */
+.navbar2{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.navbar2 p{
+    margin-top: 10px;
+}
+.navbar2 input{
+    margin-top: 20px;
+    height: 30px;
+    width: 400px;
+}
+
+
+/* Random Image Section  */
+.class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Container{
+    width: 85%;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.Container h3{
+    margin-top: 30px;
+    padding: 10px;
+}
+.Container p{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.Container img{
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+
+/* Search item Section */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    row-gap: 30px;
+}
+.footer img{
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+}
+.footer p{
+    padding: 10px;
+}
+
+/* Display ingredients Section */
+#ingredients{
+    display: none;
+    position: absolute;
+    /* background: rgba(0,0,0,0.6); */
+    width: 100%;
+    height: 100%;
+    top: 60%;
+}
+.content{
+    background-color: burlywood;
+    text-align: center;
+    max-width: 300px;
+}
+#cross{
+    height: 30px;
+    width: 30px;
+    padding: 20px;
+    margin-left: 110px;
+}
+
+
+@media (max-width: 850px) {
+    .footer{
+        grid-template-columns: repeat(2, 1fr); 
+        text-align: center;
+        align-items: center;
+        column-gap: 0; 
+    }
+}
+
+@media (max-width: 600px){
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
